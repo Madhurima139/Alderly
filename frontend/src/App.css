@@ -1,0 +1,5 @@
+/* Alderly global tweaks */
+:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px #f9f6f0, 0 0 0 4px #d97757;
+}

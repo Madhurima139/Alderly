@@ -1,0 +1,85 @@
+{
+  "theme": "Light Theme Priority (Warm, Earthy, Trustworthy)",
+  "typography": {
+    "heading_font": "Merriweather",
+    "body_font": "Work Sans",
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight text-[#1A3626] font-bold",
+      "h2": "text-3xl sm:text-4xl tracking-tight text-[#1A3626] font-semibold",
+      "h3": "text-2xl sm:text-3xl text-[#1A3626] font-medium",
+      "body": "text-lg sm:text-xl text-[#2F4F3D] leading-relaxed",
+      "small": "text-base text-[#4B5563] uppercase tracking-widest"
+    },
+    "instructions": "Do not use 'Inter' or 'Roboto'. Use 'Merriweather' for an approachable, classic feel that instills trust. Use 'Work Sans' for ultra-high legibility in long form reading. Ensure no text is smaller than 16px (text-base) to accommodate elderly users."
+  },
+  "colors": {
+    "primary": "#1A3626",
+    "primary_foreground": "#FFFFFF",
+    "secondary": "#D97757",
+    "secondary_foreground": "#FFFFFF",
+    "background": "#F9F6F0",
+    "surface": "#FFFFFF",
+    "text_main": "#111812",
+    "text_muted": "#4B5563",
+    "accent_soft": "#E2E8DE",
+    "instructions": "Archetype 1: Organic & Earthy. Primary is a Deep Forest Green for trust and health. Secondary is Terracotta for warmth and urgency (CTAs). Background is a warm Sand/Bone-white (#F9F6F0) to reduce eye strain compared to pure stark white."
+  },
+  "visual_enhancers": {
+    "shadows": "Use soft, diffuse shadows (e.g., shadow-lg shadow-[#1A3626]/5) for cards. Avoid harsh or dark drop shadows.",
+    "borders": "1px solid #E2E8DE (soft green-tinted grey) for defining containers without cognitive overload.",
+    "spacing": "Generous Spacing (p-8, p-12) to create breathing room. Do not cram elements. Elderly users need high structural clarity.",
+    "radii": "rounded-2xl or rounded-3xl for cards and buttons. Friendly, soft, no sharp aggressive corners."
+  },
+  "layouts": {
+    "general": "Minimal cognitive load. One clear action per section. High contrast.",
+    "navigation": "Sticky header with backdrop-blur-xl bg-white/95. VERY explicit labels (e.g., 'Book a Service' instead of 'Services'). Do not hide desktop links behind a hamburger menu.",
+    "hero": "Asymmetrical layout. Large, high-contrast text on the left, warm emotional image on the right. If using an image overlay, use bg-white/40 max.",
+    "dashboard": "Soft, clear grid (grid-cols-1 md:grid-cols-2). 'Upcoming Appointments' and 'Active Subscriptions' front and center. Avoid nested tabs or complex hidden menus."
+  },
+  "components": {
+    "buttons": "Large tap targets (min-h-[56px] or py-4 px-8). text-lg font-semibold. Pill-shaped or rounded-full.",
+    "forms": "Inputs must be large (h-14). Use STATIC labels (never floating labels, they confuse elders). Always include explicit placeholder text. Minimal required fields.",
+    "cards": "bg-white rounded-3xl p-8 border border-[#E2E8DE] shadow-sm hover:shadow-md transition-shadow.",
+    "instructions_to_main_agent": "Use Shadcn components but override their default tight sizing. Make everything 20% larger. Use 'lucide-react' icons (size 24 or 28, stroke 1.5) for navigation and actions."
+  },
+  "motion": {
+    "rules": "Extremely gentle. Prefer simple opacity fades and slight y-axis translations (translate-y-2). MUST respect prefers-reduced-motion. No aggressive parallax, 3D, or high-speed tickers."
+  },
+  "accessibility": {
+    "rules": [
+      "Minimum 16px body text, preferred 18px-20px for core reading.",
+      "Contrast ratio > 4.5:1 for all text. Use APCA guidelines.",
+      "Clear, highly visible focus states (ring-2 ring-[#D97757] ring-offset-2).",
+      "Explicit button labels (e.g., 'Submit Delivery Request' not just 'Submit')."
+    ]
+  },
+  "image_urls": {
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1762955911431-4c44c7c3f408?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxudXJzZSUyMGhlbHBpbmclMjBlbGRlcmx5fGVufDB8fHx8MTc4NzIwNTk4Nnww&ixlib=rb-4.1.0&q=85",
+      "description": "Caregiver assisting elderly couple, use in Landing Page Hero section to establish immediate trust."
+    },
+    "service_caretaker": {
+      "url": "https://images.unsplash.com/photo-1765896387387-0538bc9f997e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwzfHxudXJzZSUyMGhlbHBpbmclMjBlbGRlcmx5fGVufDB8fHx8MTc4NzIwNTk4Nnww&ixlib=rb-4.1.0&q=85",
+      "description": "Nurse smiling with elderly patient. Use in 'Our Services' or 'Caretakers' section."
+    },
+    "service_medicine": {
+      "url": "https://images.unsplash.com/photo-1580281657527-47f249e8f4df?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwxfHxwaGFybWFjeSUyMG1lZGljaW5lJTIwZGVsaXZlcnl8ZW58MHx8fHwxNzg3MjA1OTk5fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Pharmacist organizing medication. Use for the 'Medicine Delivery' service highlight."
+    },
+    "testimonial_happy_user": {
+      "url": "https://images.pexels.com/photos/5637572/pexels-photo-5637572.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Happy senior couple. Use in testimonials, about us, or subscription success states."
+    }
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "DO NOT output standard 'AI slop' (generic centered layouts, cramped spacing, arbitrary gradients).",
+    "CRITICAL: Do not center-align the main App container. Left-align paragraphs and dense content for natural reading flow.",
+    "CRITICAL: Do not use `transition: all`. Target specific properties like `transition: transform 0.2s, opacity 0.2s`.",
+    "CRITICAL: NEVER use AI assistant Emoji characters (🤖🧠💡🎯) as icons. Always use `lucide-react` icons (e.g., HeartPulse, Pill, CalendarCheck).",
+    "CRITICAL: Add `data-testid` attributes to all interactive and key informational elements (buttons, links, form inputs). Use kebab-case and role-based naming (e.g., `data-testid='book-service-button'`).",
+    "CRITICAL: DO NOT use complete transparent backgrounds for headers or overlays. Always use a solid color or backdrop-blur with high opacity (bg-white/95).",
+    "CRITICAL: Forms MUST use Shadcn components (Form, Input, Select) and Sonner for toast notifications (`/app/src/components/ui/sonner.tsx`).",
+    "CRITICAL: Write only standard javascript/jsx for frontend files (.js or .jsx), avoid using typescript interfaces or types.",
+    "CRITICAL: Prioritize large tap targets and >4.5:1 text contrast. Build for users aged 65+."
+  ]
+}
